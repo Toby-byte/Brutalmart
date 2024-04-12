@@ -1,0 +1,86 @@
+:root {
+    --bg-color: #012456;
+    --text-color: #ffffff;
+    --typed-text-color: #FFFF00;
+    --heighlighted-text-color: #FEDBA9
+
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Consolas', 'Courier New', monospace;
+    margin: 0% 20%;
+}
+
+::selection {
+    background-color: #FEDBA9; /* Light peach color for the text highlight */
+    color: #000000; /* Optional: change the text color when selected */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: lightblue;
+    text-decoration: none;
+}
+
+input[type="text"] {
+    background-color: #333;
+    border: none;
+    color: var(--text-color);
+    padding: 8px;
+}
+
+button {
+    background-color: green;
+    border: none;
+    color: var(--text-color);
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.product {
+    border: 1px solid #444;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    background-color: #222;
+}
+
+.product img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.product h3 {
+    margin: 5px 0;
+    color: var(text-color);
+}
+
+.product p {
+    color: var(--typed-text-color);
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 1px solid gray;
+}
